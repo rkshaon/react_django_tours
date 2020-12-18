@@ -1,4 +1,4 @@
-# Birthday Reminder
+# Tours
 `https://github.com/rkshaon/react_django_tours`
 
 ## Requirements
