@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
 import Tours from './Tours';
 
-const url = `http://127.0.0.1:8000/tour-api/tour-list/`
+const url = `http://127.0.0.1:8000/tours-api/tour-list/`
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +21,7 @@ function App() {
       const tours = await response.json();
       setLoading(false);
       setTours(tours);
+      console.log(tours);
     } catch(error){
       setLoading(false);
       console.log(error);
